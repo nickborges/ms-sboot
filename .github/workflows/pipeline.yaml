@@ -1,0 +1,13 @@
+name: "Pipeline"
+
+on:
+  push:
+    branches: [ main, master ]
+
+jobs:
+  pipeline:
+    uses: nickborges/microservice-architecture-worflow-call/.github/workflows/pipeline.yaml@main
+    with:
+      java-version: "25"
+      #message: "build success"
+    secrets: inherit
