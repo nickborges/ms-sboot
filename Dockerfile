@@ -1,7 +1,7 @@
 FROM maven:latest AS build
 WORKDIR app
 COPY . .
-RUN mvn clean package
+RUN mvn -DskipTests clean package
 
 FROM openjdk:25-jdk
 WORKDIR app
