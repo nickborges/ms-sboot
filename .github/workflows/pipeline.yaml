@@ -8,5 +8,5 @@ jobs:
   pipeline:
     uses: nickborges/microservice-architecture-worflow-call/.github/workflows/pipeline.yaml@main
     with:
-      java-version: "21"
+      java-version: "25"
     secrets: inherit
